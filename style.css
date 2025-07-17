@@ -1,4 +1,4 @@
-@import url("Your Font of Choice");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* || REST */
 * {
@@ -16,10 +16,50 @@ img {
 /* || VARIABLES */
 :root {
   /* COLORS */
+  --BODG-BG: #fff;
+  --TITLE-CLR: #969696;
+  --TITLE-SPAN-CLR: #15202a;
+  --DESCRIPTION-CLR: #15202a;
+  --INPUT-CLR: #15202a;
+  --PLACEHOLDER-CLR: #b8c7ed;
+  --INPUT-BORDER-CLR: #c2d3ff;
+  --BUTTON-CLR: #fff;
+  --BUTTON-DEFAULT-BG: #4c7bf3;
+  --BUTTON-DISABLED-BG: #8c8c8c;
+  --BUTTON-HOVER-BG: hsla(223, 87%, 63%, 0.8);
+  --SOCIAL-ICON-BORDER-CLR: hsla(223, 87%, 63%, 0.15);
+  --SOCIAL-ICON-HOVER-BG: #4c7bf3;
+  --COPYRIGHT-CLR: #9b9b9b;
+
+  --ERROR-MESSAGE: #ff5466;
+  --SUCCESS-MESSAGE: green;
 
   /* GRADIENTS */
+  --BUTTON-SHADOW: 0px 5px 10px 2px hsla(223, 87%, 63%, 0.2304);
+  --BUTTON-DISABLED-SHADOW: 0px 5px 10px 2px hsla(0, 0%, 55%, 0.2304);
 
   /* TYPOGRAPHY */
+  --FF: "Libre Franklin", sans-serif;
+
+  /* TYPOGRAPHY-SHARED */
+  --TITLE-SPAN-SHARED: bold;
+
+  /* TYPOGRAPHY-MOBILE */
+  --TITLE-MOB: 300 1.375rem/2rem var(--FF);
+  --TITLE-SPAN-MOB: bold;
+  --DESCRIPTION-MOB: 300 0.75rem var(--FF);
+  --INPUT-MOB: 300 0.75rem/1.25rem var(--FF);
+  --BUTTON-MOB: 600 0.75rem/1rem var(--FF);
+  --MESSAGE-MOB: italic 0.625rem/1.25rem var(--FF);
+  --COPYRIGHT-MOB: 300 0.625rem var(--FF);
+
+  /* TYPOGRAPHY-DESKTOP */
+  --TITLE-DSK: 300 3rem/3.75rem var(--FF);
+  --DESCRIPTION-DSK: 300 1.25rem var(--FF);
+  --INPUT-DSK: 300 1rem/1.25rem var(--FF);
+  --BUTTON-DSK: 600 1rem var(--FF);
+  --MESSAGE-DSK: italic 0.75rem/1.25rem var(--FF);
+  --COPYRIGHT-DSK: 300 0.75rem var(--FF);
 }
 
 /* || UTILITY CLASSES */
@@ -52,15 +92,9 @@ body {
   overflow-x: hidden;
 }
 
-h1,
-h2 {
+h1 {
   margin: 0;
   padding: 0;
   font-size: inherit;
   font-weight: normal;
-}
-
-a:any-link {
-  text-decoration: none;
-  color: black;
 }
